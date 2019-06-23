@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-canary
+  labels:
+    app: app-canary
+#  annotations:
+#    traefik.ingress.kubernetes.io/affinity: "true"
+#    traefik.ingress.kubernetes.io/load-balancer-method: "wrr"
+#    traefik.ingress.kubernetes.io/session-cookie-name: "app-canary"
+spec:
+  type: NodePort
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+  selector:
+    app: app-canary

@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-canary
+  labels:
+    app: app-canary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-canary
+  template:
+    metadata:
+      labels:
+        app: app-canary
+    spec:
+      containers:
+        - name: app-canary
+          image: gezx/vuecanary:latest
+          ports:
+            - name: http
+              containerPort: 80
+          livenessProbe:
+            httpGet:
+              path: /girls
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /girls
+              port: http
+            periodSeconds: 5

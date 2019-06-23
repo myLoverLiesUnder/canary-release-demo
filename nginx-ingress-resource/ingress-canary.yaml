@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: app-canary
+  labels:
+    app: app-canary
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/canary: "true"
+    nginx.ingress.kubernetes.io/canary-weight: "50"
+    nginx.ingress.kubernetes.io/upstream-hash-by: "$upstream_balancer"
+spec:
+  rules:
+    - host: app.com
+      http:
+        paths:
+          - backend:
+              serviceName: app-canary
+              servicePort: 80
+            path: /

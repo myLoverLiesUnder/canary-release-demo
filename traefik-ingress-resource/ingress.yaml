@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: traefik-app
+  annotations:
+    traefik.ingress.kubernetes.io/service-weights: |
+      app: 50%
+      app-canary: 50%
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            backend:
+              serviceName: app
+              servicePort: 80
+          - path: /
+            backend:
+              serviceName: app-canary
+              servicePort: 80
