@@ -15,10 +15,6 @@ spec:
       containers:
         - name: nginx-ingress-controller
           image: quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.24.1
-          volumeMounts:
-            - mountPath: /etc/nginx/template
-              name: nginx-template-volume
-              readOnly: true
           args:
             - /nginx-ingress-controller
             - --publish-service=$(POD_NAMESPACE)/$(SERVICE_NAME)
@@ -63,11 +59,14 @@ spec:
             periodSeconds: 10
             successThreshold: 1
             timeoutSeconds: 10
-      volumes:
-        - name: nginx-template-volume
+          volumeMounts:
+            - mountPath: /etc/nginx/template
+              name: nginx-template
+        volumes:
+        - name: nginx-template
           configMap:
             name: nginx-template
             items:
               - key: nginx.tmpl
                 path: nginx.tmpl
-
+            name: nginx-template
