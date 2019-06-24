@@ -20,3 +20,7 @@ vars:
       name: ingress-nginx
 generatorOptions:
   disableNameSuffixHash: true
+configMapGenerator:
+- name: nginx-template
+  files:
+    - ../nginx.tmpl  
