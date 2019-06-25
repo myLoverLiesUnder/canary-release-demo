@@ -40,6 +40,8 @@ spec:
           ports:
             - name: http
               containerPort: 80
+            - name: https
+              containerPort: 443
           livenessProbe:
             failureThreshold: 3
             httpGet:
@@ -62,11 +64,10 @@ spec:
           volumeMounts:
             - mountPath: /etc/nginx/template
               name: nginx-template
-        volumes:
+      volumes:
         - name: nginx-template
           configMap:
             name: nginx-template
             items:
               - key: nginx.tmpl
                 path: nginx.tmpl
-            name: nginx-template

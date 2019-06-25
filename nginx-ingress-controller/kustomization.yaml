@@ -23,4 +23,4 @@ generatorOptions:
 configMapGenerator:
 - name: nginx-template
   files:
-    - ../nginx.tmpl  
+    - configmap/nginx.tmpl

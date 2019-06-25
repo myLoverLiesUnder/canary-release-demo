@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9533032e-e790-4f95-8ab9-a49df2ef8845" name="Default Changelist" comment="" />
+    <list default="true" id="9533032e-e790-4f95-8ab9-a49df2ef8845" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nginx-ingress-controller/configmap/nginx.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-ingress-controller/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/nginx-ingress-controller/deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-ingress-controller/kustomization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/nginx-ingress-controller/kustomization.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-ingress-controller/nginx.tmpl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-ingress-resource/a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-ingress-resource/ingress-canary.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/nginx-ingress-resource/ingress-canary.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx-ingress-resource/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/nginx-ingress-resource/ingress.yaml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nginx-ingress-resource/ingress.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="64" />
+            <state relative-caret-position="209">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -25,17 +34,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nginx-ingress-resource/ingress-canary.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="190">
+              <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nginx-ingress-controller/nginx.tmpl">
+        <entry file="file://$PROJECT_DIR$/nginx-ingress-controller/configmap/nginx.tmpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="408" column="30" selection-start-line="408" selection-start-column="13" selection-end-line="408" selection-end-column="30" />
+            <state relative-caret-position="642">
+              <caret line="1323" column="9" selection-start-line="1323" selection-start-column="9" selection-end-line="1323" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -43,8 +52,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nginx-ingress-controller/deployment.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+            <state relative-caret-position="466">
+              <caret line="65" column="34" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="65" selection-end-column="34" />
+              <folding>
+                <element signature="e#911#1021#0" expanded="true" />
+                <element signature="e#1034#1154#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nginx-ingress-controller/kustomization.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+            <state relative-caret-position="418">
+              <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -63,8 +76,27 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>upstream</find>
+      <find>$applyGlobalAuth</find>
       <find>upstream_balancer</find>
+      <find>proxy_pass</find>
+      <find>start</find>
+      <find>UpstreamKeepaliveConnections</find>
+      <find>proxy_ssl_session_reuse</find>
+      <find>$upstream</find>
+      <find>isValidClientBodyBufferSize</find>
+      <find>WorkerCpuAffinity</find>
+      <find>init_by_lua_block</find>
+      <find>CUSTOM_ERRORS</find>
+      <find>CustomErrors</find>
+      <find>proxy_intercept_errors</find>
+      <find>request_uri</find>
+      <find>buildOpentracingLoad</find>
+      <find>$path</find>
+      <find>DynamicConfigurationEnabled</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -91,12 +123,13 @@
         <option value="$PROJECT_DIR$/traefik-ingress-resource/ingress.yaml" />
         <option value="$PROJECT_DIR$/app/service.yaml" />
         <option value="$PROJECT_DIR$/app-canary/service.yaml" />
-        <option value="$PROJECT_DIR$/nginx-ingress-resource/ingress.yaml" />
         <option value="$PROJECT_DIR$/nginx-ingress-resource/a" />
         <option value="$PROJECT_DIR$/configmap/nginx.tmpl" />
         <option value="$PROJECT_DIR$/nginx-ingress-resource/ingress-canary.yaml" />
-        <option value="$PROJECT_DIR$/nginx-ingress-controller/deployment.yaml" />
+        <option value="$PROJECT_DIR$/nginx-ingress-resource/ingress.yaml" />
+        <option value="$PROJECT_DIR$/nginx-ingress-controller/configmap/nginx.tmpl" />
         <option value="$PROJECT_DIR$/nginx-ingress-controller/kustomization.yaml" />
+        <option value="$PROJECT_DIR$/nginx-ingress-controller/deployment.yaml" />
       </list>
     </option>
   </component>
@@ -105,11 +138,13 @@
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,12 +165,13 @@
             <path>
               <item name="canary-release" type="b2602c69:ProjectViewProjectNode" />
               <item name="canary-release" type="462c0819:PsiDirectoryNode" />
-              <item name="configmap" type="462c0819:PsiDirectoryNode" />
+              <item name="nginx-ingress-controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="canary-release" type="b2602c69:ProjectViewProjectNode" />
               <item name="canary-release" type="462c0819:PsiDirectoryNode" />
               <item name="nginx-ingress-controller" type="462c0819:PsiDirectoryNode" />
+              <item name="configmap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="canary-release" type="b2602c69:ProjectViewProjectNode" />
@@ -147,10 +183,10 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -161,15 +197,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Workspace\canary-release\nginx-ingress-controller" />
+      <recent name="E:\Workspace\canary-release\configmap" />
+      <recent name="E:\Workspace\nginx-ingress-controller\RBAC" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Workspace\canary-release\traefik-ingress-resource" />
       <recent name="E:\Workspace\canary-release\traefik-ingress-controller" />
       <recent name="E:\Workspace\nginx-ingress-controller\app-canary" />
       <recent name="E:\Workspace\nginx-ingress-controller\app" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Workspace\canary-release\nginx-ingress-controller" />
-      <recent name="E:\Workspace\nginx-ingress-controller\RBAC" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -197,18 +234,20 @@
       <workItem from="1561169852018" duration="282000" />
       <workItem from="1561170193787" duration="26921000" />
       <workItem from="1561259660326" duration="12883000" />
-      <workItem from="1561288939472" duration="2818000" />
+      <workItem from="1561288939472" duration="2976000" />
+      <workItem from="1561377779744" duration="6757000" />
+      <workItem from="1561462213392" duration="10659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42904000" />
+    <option name="totallyTimeSpent" value="60478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23458445" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24128686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -225,8 +264,8 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32956153" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49932975" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -354,13 +393,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx-ingress-resource/a">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="644" selection-start-line="644" selection-end-line="644" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx-ingress-resource/a" />
     <entry file="file://$PROJECT_DIR$/app-canary/deployment.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -368,38 +401,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx-ingress-controller/nginx.tmpl">
+    <entry file="file://$PROJECT_DIR$/nginx-ingress-resource/ingress.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="408" column="30" selection-start-line="408" selection-start-column="13" selection-end-line="408" selection-end-column="30" />
+        <state relative-caret-position="209">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nginx-ingress-resource/ingress-canary.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="11" lean-forward="true" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="190">
+          <caret line="10" column="64" lean-forward="true" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginx-ingress-resource/ingress.yaml">
+    <entry file="file://$PROJECT_DIR$/nginx-ingress-controller/configmap/nginx.tmpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="64" />
+        <state relative-caret-position="642">
+          <caret line="1323" column="9" selection-start-line="1323" selection-start-column="9" selection-end-line="1323" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nginx-ingress-controller/kustomization.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="418">
+          <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nginx-ingress-controller/deployment.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        <state relative-caret-position="466">
+          <caret line="65" column="34" lean-forward="true" selection-start-line="63" selection-start-column="10" selection-end-line="65" selection-end-column="34" />
+          <folding>
+            <element signature="e#911#1021#0" expanded="true" />
+            <element signature="e#1034#1154#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
