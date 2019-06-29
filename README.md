@@ -33,4 +33,7 @@
         nginx : kubectl apply -f nginx-ingress-resource/
   
         traefik : kubectl apply -f traefik-ingress-resource/
+        
+nginx ingress controller need host to do canary release , so when you use nginx , you need add host (app.com)
+and add it to your local hosts file ,ip is minikube's ip.
   
